@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/jasny-bootstrap/css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="plugins/fotorama/fotorama.css">
+    <link rel="stylesheet" href="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MOKA 24</title>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <!-- Navbar for Laptop -->
+        <div class="d-none d-lg-block">
+            <div class="header-top container">
+                <div class="row align-items-center">
+                    <div class="col-lg">
+                        <a href="index.html" class="header-logo">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-auto">
+                        <form class="form-inline">
+                            <div class="input-group input-group-search mr-lg-3">
+                                <input type="text" class="form-control" placeholder="Search our store">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                            <div class="dropdown dropdown-language">
+                                <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span><i class="fas fa-globe-asia"></i> EN</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item disabled" href="#">English</a>
+                                    <a class="dropdown-item" href="#">ไทย</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom container">
+                <div class="row">
+                    <div class="col-lg">
+                        <ul class="nav nav-menu">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">
+                                    <span><i class="fas fa-home"></i></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-sub-menu" href="products.html">
+                                    <span>สินค้าของเรา</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="how2pay.html">
+                                    <span>การชำระเงิน</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">
+                                    <span>ติดต่อเรา</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">
+                                    <span>BLOG</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-auto">
+                        <ul class="nav nav-right">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#registerModal" data-toggle="modal">
+                                    <span>&bull;</span> REGISTER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#loginModal" data-toggle="modal">
+                                    <span>&bull;</span> LOGIN</a>
+                            </li>
+                            <li class="nav-item nav-item-cart">
+                                <a class="nav-link btn-shopping-cart" href="#">
+                                    <i class="fas fa-shopping-cart fa-lg"></i>
+                                    <span class="badge badge-brand badge-pill">3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Sub menu -->
+                <div class="sub-menu">
+                    <ul class="nav nav-sub-menu nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-01.png" alt="">
+                                <p>หม้อต้มกาแฟ
+                                    <br> โมก้าพ็อต/Moka pot</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-02.png" alt="">
+                                <p>ชุดชงกาแฟดริป
+                                    <br> Drip Brew</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-03.png" alt="">
+                                <p>เครื่องชงกาแฟ
+                                    <br> Aeropress
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-04.png" alt="">
+                                <p>ที่บดเมล็ดกาแฟ</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-05.png" alt="">
+                                <p>แก้วกาแฟ</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-06.png" alt="">
+                                <p>เมล็ดกาแฟคั่ว</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-07.png" alt="">
+                                <p>อุปกรณ์อื่น
+                                    <br> สำหรับชา/กาแฟ
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-08.png" alt="">
+                                <p>อุปกรณ์
+                                    <br> เครื่องครัว
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar for Mobile -->
+        <div class="navbar-mobile d-lg-none">
+            <nav id="navbarMobile" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item pt-5">
+                        <a href="index.html">หน้าแรก</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="products.html">สินค้าของเรา</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="how2pay.html" class="active">การชำระเงิน</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="contact.html">ติดต่อเรา</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="blog.html">BLOG</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">วิธิการสั่งซื้อสินค้า</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">การจัดส่งสินค้า</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">ช่องทางการชำระเงิน</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">ติดตามสถานะสินค้า</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">บทความ</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">หมวดหมู่สินค้า</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">แบร์นสินค้าที่เราขาย</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#registerModal" data-toggle="modal">REGISTER</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#loginModal" data-toggle="modal">LOGIN</a>
+                    </li>
+                    <li class="list-group-item dropdown dropdown-language">
+                        <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span><i class="fas fa-globe-asia"></i> EN</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item disabled" href="#">English</a>
+                            <a class="dropdown-item" href="#">ไทย</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navbar navbar-light">
+                <div>
+                    <button type="button" class="navbar-toggle btn bg-transparent" data-toggle="offcanvas" data-target="#navbarMobile" data-canvas="body">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                    <button type="button" class="btn bg-transparent">
+                        <i class="fas fa-search fa-lg"></i>
+                    </button>
+                </div>
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <a href="#" class="btn-shopping btn-shopping-cart">
+                    <i class="fas fa-shopping-cart fa-lg text-dark"></i>
+                    <span class="badge badge-brand badge-pill">3</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">การชำระเงิน</li>
+            </ol>
+        </div>
+    </nav>
+    <!-- Main content -->
+    <main class="container how2pay-page">
+        <h2 class="page-title mb-5">การชำระเงิน</h2>
+        <div class="px-lg-4">
+            <p class="text-muted">สามารถชำระเงิน โดยการชำระด้วยการโอนเงินหรือฝากเงิน</p>
+            <div class="row row-pay">
+                <div class="col-lg-6">
+                    <div class="card card-pay-1">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="img/How2pay/img-pay-01.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <h5 class="mb-0">ธนาคารกรุงเทพ</h5>
+                                    <small class="d-block">สาขานิคมมอุตสาหกรรมอมตะนคร</small>
+                                    <p class="mb-0">ชื่อบัญชี บจ.โมก้า ทเวนตี้โฟร์</p>
+                                    <small class="d-block">บัญชี่เลขที่</small>
+                                    <h5 class="mb-0">582-4-23557-0</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card card-pay-2">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="img/How2pay/img-pay-02.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <h5 class="mb-0">ธนาคารกสิกรไทย</h5>
+                                    <small class="d-block">สาขาเซนทรัลพลาซ่าชลบุรี</small>
+                                    <p class="mb-0">ชื่อบัญชี บจ.โมก้า ทเวนตี้โฟร์</p>
+                                    <small class="d-block">บัญชี่เลขที่</small>
+                                    <h5 class="mb-0">040-8-47919-3</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card card-pay-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="img/How2pay/img-pay-03.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <h5 class="mb-0">PayPal</h5>
+                                    <small class="d-block">paypal account</small>
+                                    <h5 class="mb-0">mokapot24@gmail.com</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="font-weight-bold">ชำระเงินด้วยบัตรเครดิต</p>
+            <p class="text-muted">
+                สามารถชำระเงินด้วยบัตรเครดิตได้ใน หน้าตะกร้าสินค้า
+                <br> ลูกค้าไม่สะดวกสั่งซื้อผ่านหน้าเว็บไชต์ สามารถสั่งซื้อผ่าน ทาง Line / FB Message
+            </p>
+            <div class="mb-5">
+                <span class="border p-2 d-inline-block">
+                    <img src="img/How2pay/icon-line.png" alt="" class="mr-3">@mokapot24</span>
+                <span class="border p-2 d-inline-block">
+                    <img src="img/How2pay/icon-messenger.png" alt="" class="mr-3">@mokapot24</span>
+            </div>
+        </div>
+        <h2 class="page-title mb-5">แจ้งชำระเงิน</h2>
+        <form action="" class="how2pay-form border border-brand p-3 p-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="">ชื่อ</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="">เบอร์ติดต่อ</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="">รายการสั่งซื้อ</label>
+                                <select class="custom-select">
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="">ยอดโอน</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="">ธนาคารที่โอน</label>
+                                <ul class="list-unstyled form-check-list">
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                <img src="img/How2pay/img-pay-small-01.png" alt="" class="mr-3">กรุงเทพ
+                                                <span class="mx-5">582-4-23557-0</span> บจ.โมก้า ทเวนตี้โฟร์
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            <label class="form-check-label" for="exampleRadios2">
+                                                <img src="img/How2pay/img-pay-small-02.png" alt="" class="mr-3">กสิกรไทย
+                                                <span class="mx-5">040-8-47919-3</span> บจ.โมก้า ทเวนตี้โฟร์
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="">วันที่โอน</label>
+                                <div class="custom-datepicker">
+                                    <input type="text" class="form-control">
+                                    <i class="icofont icofont-calendar"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="">เวลา</label>
+                                <div class="form-row">
+                                    <div class="col-6">
+                                        <select class="custom-select">
+                                            <option value=""></option>
+                                            <option value="00">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <select class="custom-select">
+                                            <option value=""></option>
+                                            <option value="00">00</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                            <option value="32">32</option>
+                                            <option value="33">33</option>
+                                            <option value="34">34</option>
+                                            <option value="35">35</option>
+                                            <option value="36">36</option>
+                                            <option value="37">37</option>
+                                            <option value="38">38</option>
+                                            <option value="39">39</option>
+                                            <option value="40">40</option>
+                                            <option value="41">41</option>
+                                            <option value="42">42</option>
+                                            <option value="43">43</option>
+                                            <option value="44">44</option>
+                                            <option value="45">45</option>
+                                            <option value="46">46</option>
+                                            <option value="47">47</option>
+                                            <option value="48">48</option>
+                                            <option value="49">49</option>
+                                            <option value="50">50</option>
+                                            <option value="51">51</option>
+                                            <option value="52">52</option>
+                                            <option value="53">53</option>
+                                            <option value="54">54</option>
+                                            <option value="55">55</option>
+                                            <option value="56">56</option>
+                                            <option value="57">57</option>
+                                            <option value="58">58</option>
+                                            <option value="59">59</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group mb-5">
+                                <label for="">หลักฐานการโอน</label>
+                                <div class="custom-file">
+                                    <input type="file" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 offset-lg-3">
+                            <button type="submit" class="btn btn-secondary btn-lg btn-block">แจ้งชำระเงิน</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-lg text-center text-lg-left">
+                    <h6>บริษัท โมก้า ทเวนตี้โฟร์ จำกัด</h6>
+                    <p class="small text-muted">อาคารพาณิชย์ เลขที่ 88/8 หมู่ที่ 2
+                        <br> หมู่บ้าน เดอระเพอร์เฟค เพลส นาป่า ต.นาป่า
+                        <br> อ.เมือง จ.ชลบุรี 20000 โทร 0846556126
+                    </p>
+                    <ul class="list-inline d-lg-none">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-facebook-f text-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-youtube text-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 d-lg-none">
+                    <hr>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">วิธิการสั่งซื้อสินค้า</a>
+                        </li>
+                        <li>
+                            <a href="#">การจัดส่งสินค้า</a>
+                        </li>
+                        <li>
+                            <a href="#">ช่องทางการชำระเงิน</a>
+                        </li>
+                        <li>
+                            <a href="#">ติดตามสถานะสินค้า</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">บทความ</a>
+                        </li>
+                        <li>
+                            <a href="#">หมวดหมู่สินค้า</a>
+                        </li>
+                        <li>
+                            <a href="#">แบร์นสินค้าที่เราขาย</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 d-lg-none">
+                    <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>วิธิการสั่งซื้อสินค้า</option>
+                            <option>การจัดส่งสินค้า</option>
+                            <option>ช่องทางการชำระเงิน</option>
+                            <option>ติดตามสถานะสินค้า</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="row justify-content-center">
+                        <div class="col-auto border-right">
+                            <div class="small text-muted">Delivery by</div>
+                            <img src="img/footer/img-01.png" alt="">
+                        </div>
+                        <div class="col-auto">
+                            <img src="img/footer/img-02.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="d-none d-lg-block">
+            <div class="footer-last">
+                <div class="row justify-content-between py-3">
+                    <div class="col-lg d-none d-lg-block">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-facebook-f text-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-youtube text-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-auto text-center">
+                        <small class="text-muted">© 2018 moka24.com. All Rights Reserved.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+    <script src="plugins/OwlCarousel2/dist/owl.carousel.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/locales/bootstrap-datepicker.th.min.js"></script>
+    <script src="plugins/fotorama/fotorama.js"></script>
+    <script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="plugins/jQuery-slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="js/script.js"></script>
+    <div class="modal modal-member fade" id="loginModal">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times fa-lg"></i></span>
+        </button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="modal-body">
+                    <h1 class="text-center mb-4">Login</h1>
+                    <div class="form-group">
+                        <input type="email" name="name" value="" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" name="name" value="" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Always Login</label>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#" class="text-black">Forgot your password?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-login-group mt-4">
+                        <button type="submit" class="btn btn-black btn-block">SIGN IN</button>
+                        <div class="text-center py-3">หรือ</div>
+                        <button type="button" class="btn btn-outline-black btn-block">CREATE ACCOUNT</button>
+                        <button type="button" class="btn btn-facebook btn-block"><i class="fab fa-facebook fa-lg float-left mt-1"></i>LOGIN WITH FACEBOOK</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Register -->
+    <div class="modal modal-member fade" id="registerModal">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times fa-lg"></i></span>
+        </button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1 class="text-center mb-4">Create Account</h1>
+                    <div class="form-group">
+                        <input type="text" name="name" value="" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" value="" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="name" value="" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="name" value="" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="btn-login-group mt-4">
+                        <button type="submit" class="btn btn-black btn-block">CREATE</button>
+                        <div class="text-center py-3">
+                            <a href="#" class="text-black">Return to Store</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shopping cart order -->
+    <div class="card card-shopping-order">
+        <div class="card-body">
+            <h5 class="card-title">
+                <span>SHOPPING CART</span>
+                <button type="button" class="btn close-shopping-cart bg-transparent"><i class="fas fa-times"></i></button>
+            </h5>
+            <ul class="list-order">
+                <li class="order-item">
+                    <div class="item-delete">
+                        <button type="button" class="btn btn-del bg-transparent"><i class="fas fa-times-circle"></i></button>
+                    </div>
+                    <div class="item-img">
+                        <img src="img/Products/img-01.png" alt="">
+                    </div>
+                    <div class="item-detail">
+                        <div class="detail-title">Bialetti Moka Express ขนาด 1-9 cup</div>
+                        <div class="form-row align-items-center">
+                            <div class="col">
+                                <input type="text" value="1" name="name" class="input-sm input-number">
+                            </div>
+                            <div class="col">
+                                <p class="price">฿1,390.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="order-item">
+                    <div class="item-delete">
+                        <button type="button" class="btn btn-del bg-transparent"><i class="fas fa-times-circle"></i></button>
+                    </div>
+                    <div class="item-img">
+                        <img src="img/Products/img-02.png" alt="">
+                    </div>
+                    <div class="item-detail">
+                        <div class="detail-title">Soto Regulator stove st-310</div>
+                        <div class="form-row align-items-center">
+                            <div class="col">
+                                <input type="text" value="1" name="name" class="input-sm input-number">
+                            </div>
+                            <div class="col">
+                                <p class="price">฿1,090.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="form-group">
+                <h6>Special instructions for seller</h6>
+                <textarea name="name" rows="5" class="form-control"></textarea>
+            </div>
+            <h5 class="d-flex justify-content-between">SUB TOTAL
+                <span>฿2,580.00</span>
+            </h5>
+            <p class="small text-muted">Shipping & taxes calculated at checkout</p>
+            <button type="submit" class="btn btn-black btn-block">CHECK OUT <i class="fas fa-long-arrow-alt-right"></i></button>
+        </div>
+    </div>
+</body>
+
+</html>

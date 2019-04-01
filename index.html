@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/jasny-bootstrap/css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="plugins/fotorama/fotorama.css">
+    <link rel="stylesheet" href="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MOKA 24</title>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <!-- Navbar for Laptop -->
+        <div class="d-none d-lg-block">
+            <div class="header-top container">
+                <div class="row align-items-center">
+                    <div class="col-lg">
+                        <a href="index.html" class="header-logo">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-auto">
+                        <form class="form-inline">
+                            <div class="input-group input-group-search mr-lg-3">
+                                <input type="text" class="form-control" placeholder="Search our store">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                            <div class="dropdown dropdown-language">
+                                <a href="#" class="dropdown-toggle" id="dropdownLanguageButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span><i class="fas fa-globe-asia"></i> EN</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownLanguageButton">
+                                    <a class="dropdown-item disabled" href="#">English</a>
+                                    <a class="dropdown-item" href="#">ไทย</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom container">
+                <div class="row">
+                    <div class="col-lg">
+                        <ul class="nav nav-menu">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">
+                                    <span><i class="fas fa-home"></i></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-sub-menu" href="products.html">
+                                    <span>สินค้าของเรา</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="how2pay.html">
+                                    <span>การชำระเงิน</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">
+                                    <span>ติดต่อเรา</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">
+                                    <span>BLOG</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-auto">
+                        <ul class="nav nav-right">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#registerModal" data-toggle="modal">
+                                    <span>&bull;</span> REGISTER
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#loginModal" data-toggle="modal">
+                                    <span>&bull;</span> LOGIN
+                                </a>
+                            </li>
+                            <li class="nav-item nav-item-cart">
+                                <a class="nav-link btn-shopping-cart" href="#">
+                                    <i class="fas fa-shopping-cart fa-lg"></i>
+                                    <span class="badge badge-brand badge-pill">3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Sub menu -->
+                <div class="sub-menu">
+                    <ul class="nav nav-sub-menu nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-01.png" alt="">
+                                <p>หม้อต้มกาแฟ
+                                    <br> โมก้าพ็อต/Moka pot</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-02.png" alt="">
+                                <p>ชุดชงกาแฟดริป
+                                    <br> Drip Brew</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-03.png" alt="">
+                                <p>เครื่องชงกาแฟ
+                                    <br> Aeropress
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-04.png" alt="">
+                                <p>ที่บดเมล็ดกาแฟ</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-05.png" alt="">
+                                <p>แก้วกาแฟ</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-06.png" alt="">
+                                <p>เมล็ดกาแฟคั่ว</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-07.png" alt="">
+                                <p>อุปกรณ์อื่น
+                                    <br> สำหรับชา/กาแฟ
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <img src="img/header/icon-sub-menu-08.png" alt="">
+                                <p>อุปกรณ์
+                                    <br> เครื่องครัว
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar for Mobile -->
+        <div class="navbar-mobile d-lg-none">
+            <nav id="navbarMobile" class="navmenu navmenu-default navmenu-fixed-left offcanvas">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item pt-5">
+                        <a href="index.html" class="active">หน้าแรก</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="products.html">สินค้าของเรา</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="how2pay.html">การชำระเงิน</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="contact.html">ติดต่อเรา</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="blog.html">BLOG</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">วิธิการสั่งซื้อสินค้า</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">การจัดส่งสินค้า</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">ช่องทางการชำระเงิน</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">ติดตามสถานะสินค้า</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">บทความ</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">หมวดหมู่สินค้า</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">แบร์นสินค้าที่เราขาย</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#registerModal" data-toggle="modal">REGISTER</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#loginModal" data-toggle="modal">LOGIN</a>
+                    </li>
+                    <li class="list-group-item dropdown dropdown-language">
+                        <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span><i class="fas fa-globe-asia"></i> EN</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item disabled" href="#">English</a>
+                            <a class="dropdown-item" href="#">ไทย</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navbar navbar-light">
+                <div>
+                    <button type="button" class="navbar-toggle btn bg-transparent pr-0" data-toggle="offcanvas" data-target="#navbarMobile" data-canvas="body">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                    <button type="button" class="btn bg-transparent pr-0">
+                        <i class="fas fa-search fa-lg"></i>
+                    </button>
+                </div>
+                <a href="index.html" class="navbar-brand mr-4 mr-lg-0">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <a href="#" class="btn-shopping btn-shopping-cart">
+                    <i class="fas fa-shopping-cart fa-lg text-dark"></i>
+                    <span class="badge badge-brand badge-pill">3</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="section-banner">
+        <div class="container">
+            <div class="row">
+                <div class="banner-slide col-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="img/img-slide.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/img-slide.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/img-slide.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-block-banner py-5">
+        <div class="container">
+            <div class="form-row">
+                <div class="col-6 col-lg">
+                    <div class="row">
+                        <div class="col-12 d-lg-none">
+                            <a href="#">
+                                <div class="card mb-2">
+                                    <img class="card-img" src="img/block-banner/img-02.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="#">
+                                <div class="card">
+                                    <img class="card-img" src="img/block-banner/img-01.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                    <div class="row h-100">
+                        <div class="col-12">
+                            <a href="#">
+                                <div class="card">
+                                    <img class="card-img" src="img/block-banner/img-02.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 align-self-end">
+                            <a href="#">
+                                <div class="card">
+                                    <img class="card-img" src="img/block-banner/img-03.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <img class="card-img" src="img/block-banner/img-04.png" alt="">
+                                <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                                    <a href="#" class="btn btn-brand">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-lg-none">
+                            <a href="#">
+                                <div class="card mt-2">
+                                    <img class="card-img" src="img/block-banner/img-03.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section-feature-product bg-brand py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-auto order-1 order-lg-1">
+                    <h2 class="text-title text-center text-lg-left">
+                        <span>Featured Collections</span>
+                    </h2>
+                </div>
+                <div class="col-12 col-lg order-3 order-lg-2 text-center text-lg-right">
+                    <a href="#" class="btn btn-link text-dark mt-5 mt-lg-0">View more</a>
+                </div>
+                <div class="col-12 col-lg-12 order-2 order-lg-3">
+                    <div class="product-slide owl-carousel owl-theme text-center">
+                        <a href="#" class="item">
+                            <div class="card item">
+                                <img class="card-img-top" src="img/feature-product/Clip-0.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">ที่บดเมล็ดกาแฟมือหมุน Hario Hand Grinder Ceramic Coffee</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="card item">
+                                <img class="card-img-top" src="img/feature-product/Clip-1.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">ที่บดเมล็ดกาแฟมือหมุน Hario Hand Grinder Ceramic Coffee</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="card item">
+                                <img class="card-img-top" src="img/feature-product/Clip-2.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">ที่บดเมล็ดกาแฟมือหมุน Hario Hand Grinder Ceramic Coffee</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="card item">
+                                <img class="card-img-top" src="img/feature-product/Clip-3.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">ที่บดเมล็ดกาแฟมือหมุน Hario Hand Grinder Ceramic Coffee</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="card item">
+                                <img class="card-img-top" src="img/feature-product/Clip-4.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">ที่บดเมล็ดกาแฟมือหมุน Hario Hand Grinder Ceramic Coffee</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="card item">
+                                <img class="card-img-top" src="img/feature-product/Clip-0.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">ที่บดเมล็ดกาแฟมือหมุน Hario Hand Grinder Ceramic Coffee</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="card item">
+                                <img class="card-img-top" src="img/feature-product/Clip-1.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">ที่บดเมล็ดกาแฟมือหมุน Hario Hand Grinder Ceramic Coffee</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="card item">
+                                <img class="card-img-top" src="img/feature-product/Clip-2.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">ที่บดเมล็ดกาแฟมือหมุน Hario Hand Grinder Ceramic Coffee</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="card item">
+                                <img class="card-img-top" src="img/feature-product/Clip-3.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">ที่บดเมล็ดกาแฟมือหมุน Hario Hand Grinder Ceramic Coffee</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="card item">
+                                <img class="card-img-top" src="img/feature-product/Clip-4.png" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">ที่บดเมล็ดกาแฟมือหมุน Hario Hand Grinder Ceramic Coffee</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-product py-5">
+        <div class="container">
+            <div class="form-row text-center text-white">
+                <div class="col-6 col-lg-3">
+                    <a href="#">
+                        <div class="card mb-4">
+                            <img class="card-img" src="img/product/img-01.png" alt="">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <div>
+                                    <h5 class="card-title">หม้อต้มกาแฟ
+                                        <br> โมก้าพ็อต/Moka pot</h5>
+                                    <u class="font-italic text-light">Shop Now</u>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <a href="#">
+                        <div class="card mb-4">
+                            <img class="card-img" src="img/product/img-02.png" alt="">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <div>
+                                    <h5 class="card-title">ชุดชงกาแฟดริป
+                                        <br> Drip Brew</h5>
+                                    <u class="font-italic text-light">Shop Now</u>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <a href="#">
+                        <div class="card mb-4">
+                            <img class="card-img" src="img/product/img-03.png" alt="">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <div>
+                                    <h5 class="card-title">เครื่องชงกาแฟ
+                                        <br> Aeropress
+                                    </h5>
+                                    <u class="font-italic text-light">Shop Now</u>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <a href="#">
+                        <div class="card mb-4">
+                            <img class="card-img" src="img/product/img-04.png" alt="">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <div>
+                                    <h5 class="card-title">ที่บดเมล็ดกาแฟ</h5>
+                                    <u class="font-italic text-light">Shop Now</u>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <a href="#">
+                        <div class="card mb-4">
+                            <img class="card-img" src="img/product/img-05.png" alt="">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <div>
+                                    <h5 class="card-title">แก้วกาแฟ</h5>
+                                    <u class="font-italic text-light">Shop Now</u>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <a href="#">
+                        <div class="card mb-4">
+                            <img class="card-img" src="img/product/img-06.png" alt="">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <div>
+                                    <h5 class="card-title">เมล็ดกาแฟคั่ว</h5>
+                                    <u class="font-italic text-light">Shop Now</u>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <a href="#">
+                        <div class="card mb-4">
+                            <img class="card-img" src="img/product/img-07.png" alt="">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <div>
+                                    <h5 class="card-title">อุปกรณ์อื่น
+                                        <br> สำหรับชา/กาแฟ
+                                    </h5>
+                                    <u class="font-italic text-light">Shop Now</u>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <a href="#">
+                        <div class="card mb-4">
+                            <img class="card-img" src="img/product/img-08.png" alt="">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <div>
+                                    <h5 class="card-title">อุปกรณ์เครื่องครัว</h5>
+                                    <u class="font-italic text-light">Shop Now</u>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-news bg-gray py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-auto order-1 order-lg-1">
+                    <h2 class="text-title text-center text-lg-left">
+                        <span>Articles</span>
+                    </h2>
+                </div>
+                <div class="col-12 col-lg order-3 order-lg-2 text-center text-lg-right">
+                    <a href="#" class="btn btn-link text-dark mt-5 mt-lg-0">View more</a>
+                </div>
+                <div class="col-12 col-lg-12 order-2 order-lg-3">
+                    <div class="form-row">
+                        <div class="col-6 col-lg-3">
+                            <a href="#">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top" src="img/news/img-01.png" alt="">
+                                    <div class="card-body px-0">
+                                        <h5 class="card-title">Pour-over Coffee Accessories for Beginner</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">7 Mar 2018</h6>
+                                        <p class="card-text">อุปกรณ์ชงกาแฟดริปสำหรับผู้เริ่มต้น : Pour-over Coffee Accessories for Beginner อยากเริ่มดริปกาแฟทานเองกับเค้ามั่งแต่ไม่รู้...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <a href="#">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top" src="img/news/img-02.png" alt="">
+                                    <div class="card-body px-0">
+                                        <h5 class="card-title">Pour-over Coffee Accessories for Beginner</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">7 Mar 2018</h6>
+                                        <p class="card-text">อุปกรณ์ชงกาแฟดริปสำหรับผู้เริ่มต้น : Pour-over Coffee Accessories for Beginner อยากเริ่มดริปกาแฟทานเองกับเค้ามั่งแต่ไม่รู้...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <a href="#">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top" src="img/news/img-03.png" alt="">
+                                    <div class="card-body px-0">
+                                        <h5 class="card-title">Pour-over Coffee Accessories for Beginner</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">7 Mar 2018</h6>
+                                        <p class="card-text">อุปกรณ์ชงกาแฟดริปสำหรับผู้เริ่มต้น : Pour-over Coffee Accessories for Beginner อยากเริ่มดริปกาแฟทานเองกับเค้ามั่งแต่ไม่รู้...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <a href="#">
+                                <div class="card bg-transparent">
+                                    <img class="card-img-top" src="img/news/img-04.png" alt="">
+                                    <div class="card-body px-0">
+                                        <h5 class="card-title">Pour-over Coffee Accessories for Beginner</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">7 Mar 2018</h6>
+                                        <p class="card-text">อุปกรณ์ชงกาแฟดริปสำหรับผู้เริ่มต้น : Pour-over Coffee Accessories for Beginner อยากเริ่มดริปกาแฟทานเองกับเค้ามั่งแต่ไม่รู้...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-brand py-4">
+        <div class="container">
+            <div class="row no-gutters text-center">
+                <div class="col">
+                    <a href="#">
+                        <img src="img/brand/img-01.png" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="img/brand/img-02.png" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="img/brand/img-03.png" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="img/brand/img-04.png" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="img/brand/img-05.png" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="img/brand/img-06.png" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="img/brand/img-07.png" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="img/brand/img-08.png" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="img/brand/img-09.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-lg text-center text-lg-left">
+                    <h6>บริษัท โมก้า ทเวนตี้โฟร์ จำกัด</h6>
+                    <p class="small text-muted">อาคารพาณิชย์ เลขที่ 88/8 หมู่ที่ 2
+                        <br> หมู่บ้าน เดอระเพอร์เฟค เพลส นาป่า ต.นาป่า
+                        <br> อ.เมือง จ.ชลบุรี 20000 โทร 0846556126
+                    </p>
+                    <ul class="list-inline d-lg-none">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-facebook-f text-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-youtube text-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 d-lg-none">
+                    <hr>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">วิธิการสั่งซื้อสินค้า</a>
+                        </li>
+                        <li>
+                            <a href="#">การจัดส่งสินค้า</a>
+                        </li>
+                        <li>
+                            <a href="#">ช่องทางการชำระเงิน</a>
+                        </li>
+                        <li>
+                            <a href="#">ติดตามสถานะสินค้า</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">บทความ</a>
+                        </li>
+                        <li>
+                            <a href="#">หมวดหมู่สินค้า</a>
+                        </li>
+                        <li>
+                            <a href="#">แบร์นสินค้าที่เราขาย</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 d-lg-none">
+                    <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>วิธิการสั่งซื้อสินค้า</option>
+                            <option>การจัดส่งสินค้า</option>
+                            <option>ช่องทางการชำระเงิน</option>
+                            <option>ติดตามสถานะสินค้า</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-auto">
+                    <div class="row justify-content-center">
+                        <div class="col-auto border-right">
+                            <div class="small text-muted">Delivery by</div>
+                            <img src="img/footer/img-01.png" alt="">
+                        </div>
+                        <div class="col-auto">
+                            <img src="img/footer/img-02.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="d-none d-lg-block">
+            <div class="footer-last">
+                <div class="row justify-content-between py-3">
+                    <div class="col-lg d-none d-lg-block">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-facebook-f text-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-youtube text-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-auto text-center">
+                        <small class="text-muted">© 2018 moka24.com. All Rights Reserved.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+    <script src="plugins/OwlCarousel2/dist/owl.carousel.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/locales/bootstrap-datepicker.th.min.js"></script>
+    <script src="plugins/fotorama/fotorama.js"></script>
+    <script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="plugins/jQuery-slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Modal Login -->
+    <div class="modal modal-member fade" id="loginModal">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times fa-lg"></i></span>
+        </button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="modal-body">
+                    <h1 class="text-center mb-4">Login</h1>
+                    <div class="form-group">
+                        <input type="email" name="name" value="" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" name="name" value="" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Always Login</label>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#" class="text-black">Forgot your password?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-login-group mt-4">
+                        <button type="submit" class="btn btn-black btn-block">SIGN IN</button>
+                        <div class="text-center py-3">หรือ</div>
+                        <button type="button" class="btn btn-outline-black btn-block">CREATE ACCOUNT</button>
+                        <button type="button" class="btn btn-facebook btn-block"><i class="fab fa-facebook fa-lg float-left mt-1"></i>LOGIN WITH FACEBOOK</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Register -->
+    <div class="modal modal-member fade" id="registerModal">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times fa-lg"></i></span>
+        </button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1 class="text-center mb-4">Create Account</h1>
+                    <div class="form-group">
+                        <input type="text" name="name" value="" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" value="" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="name" value="" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="name" value="" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="btn-login-group mt-4">
+                        <button type="submit" class="btn btn-black btn-block">CREATE</button>
+                        <div class="text-center py-3">
+                            <a href="#" class="text-black">Return to Store</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shopping cart order -->
+    <div class="card card-shopping-order">
+        <div class="card-body">
+            <h5 class="card-title">
+                <span>SHOPPING CART</span>
+                <button type="button" class="btn close-shopping-cart bg-transparent"><i class="fas fa-times"></i></button>
+            </h5>
+            <ul class="list-order">
+                <li class="order-item">
+                    <div class="item-delete">
+                        <button type="button" class="btn btn-del bg-transparent"><i class="fas fa-times-circle"></i></button>
+                    </div>
+                    <div class="item-img">
+                        <img src="img/Products/img-01.png" alt="">
+                    </div>
+                    <div class="item-detail">
+                        <div class="detail-title">Bialetti Moka Express ขนาด 1-9 cup</div>
+                        <div class="form-row align-items-center">
+                            <div class="col">
+                                <input type="text" value="1" name="name" class="input-sm input-number">
+                            </div>
+                            <div class="col">
+                                <p class="price">฿1,390.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="order-item">
+                    <div class="item-delete">
+                        <button type="button" class="btn btn-del bg-transparent"><i class="fas fa-times-circle"></i></button>
+                    </div>
+                    <div class="item-img">
+                        <img src="img/Products/img-02.png" alt="">
+                    </div>
+                    <div class="item-detail">
+                        <div class="detail-title">Soto Regulator stove st-310</div>
+                        <div class="form-row align-items-center">
+                            <div class="col">
+                                <input type="text" value="1" name="name" class="input-sm input-number">
+                            </div>
+                            <div class="col">
+                                <p class="price">฿1,090.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="form-group">
+                <h6>Special instructions for seller</h6>
+                <textarea name="name" rows="5" class="form-control"></textarea>
+            </div>
+            <h5 class="d-flex justify-content-between">SUB TOTAL
+                <span>฿2,580.00</span>
+            </h5>
+            <p class="small text-muted">Shipping & taxes calculated at checkout</p>
+            <button type="submit" class="btn btn-black btn-block">CHECK OUT <i class="fas fa-long-arrow-alt-right"></i></button>
+        </div>
+    </div>
+</body>
+
+</html>
